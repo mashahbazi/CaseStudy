@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CaseStudy</string>
+    <string name="scoring">Scoring</string>
+    <string name="done">Done</string>
+    <string name="score">Score</string>
+    <string name="game_time">Game time</string>
+    <string name="date">Date</string>
+    <string name="move">Move</string>
+</resources>

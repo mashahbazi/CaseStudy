@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="isTitle"
+            type="boolean" />
+
+        <variable
+            name="score"
+            type="String" />
+
+        <variable
+            name="gameTime"
+            type="String" />
+
+        <variable
+            name="date"
+            type="String" />
+
+        <variable
+            name="move"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:paddingTop="12dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="12dp"
+        tools:background="@color/black">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@{score != null ? score : @string/score}"
+            android:textColor="@{isTitle == true ? @color/title_item : @color/white}"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@{gameTime != null ? gameTime : @string/game_time}"
+            android:textColor="@{isTitle == true ? @color/title_item : @color/white}"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@{date != null ? date : @string/date}"
+            android:textColor="@{isTitle == true ? @color/title_item : @color/white}"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@{move != null ? move : @string/move}"
+            android:textColor="@{isTitle == true ? @color/title_item : @color/white}"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</layout>
